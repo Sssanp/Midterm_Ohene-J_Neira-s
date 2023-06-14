@@ -95,6 +95,7 @@ body {
    background-image: url("path/to/hero-image.jpg");
    background-size: cover;
    background-position: center;
+   background-color: grey;
    /* Additional styling for the hero section if needed */
 }
 
@@ -161,3 +162,71 @@ body {
    background-position: center;
    height: 200px;
 }
+
+/*product images*/
+.productimage-1 {
+   background-image:url("path/to/.productimage-1.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 300px;
+   background-color: gray;
+
+}
+
+/*video*/
+
+.video {
+      background-image:url("path/to/.video.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      background-color: gray; 
+}
+
+/*cans*/
+.can-1 {
+background-image:url("path/to/.can-1.jpg");
+background-size: cover;
+background-position: center;
+height: 350px;
+background-color: gray; 
+}
+
+.can-2 {
+   background-image:url("path/to/.can-2.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 350px;
+   background-color: gray; 
+   }
+   
+.can-3{
+   background-image:url("path/to/.can-3.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 350px;
+   background-color: gray; 
+   }
+   
+/*recipes*/
+.recipe-1{
+   background-image:url("path/to/.recipe-1.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 450px;
+   background-color: gray; 
+   }
+   .recipe-2{
+      background-image:url("path/to/.recipe-2.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 450px;
+      background-color: gray; 
+      }
+      .recipe-3{
+         background-image:url("path/to/.recipe-3.jpg");
+         background-size: cover;
+         background-position: center;
+         height: 450px;
+         background-color: gray; 
+         }
