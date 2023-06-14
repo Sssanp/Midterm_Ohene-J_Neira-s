@@ -230,3 +230,12 @@ background-color: gray;
          height: 450px;
          background-color: gray; 
          }
+
+/*Newsletter*/
+
+.newsletter-img{
+background-image:url("path/to/.newsletter-img");
+background-size: cover;
+background-position: center;
+height: 350px;
+background-color: gray;}
