@@ -12,6 +12,10 @@ body {
      max-width:100%;
  
   }
+  nav {
+   display: inline-block;
+  }
+
   p, h1, h2, h3, h4, h5{
     padding: 0px;
     margin: 0px;
@@ -209,6 +213,7 @@ background-color: gray;
    }
    
 /*recipes*/
+
 .recipe-1{
    background-image:url("path/to/.recipe-1.jpg");
    background-size: cover;
@@ -223,12 +228,15 @@ background-color: gray;
       height: 450px;
       background-color: gray; 
       }
-      .recipe-3{
-         background-image:url("path/to/.recipe-3.jpg");
-         background-size: cover;
-         background-position: center;
-         height: 450px;
-         background-color: gray; 
+      
+   .recipe-3{
+      background-image:url("path/to/.recipe-3.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 450px;
+      background-color: gray; 
+      border-width: 1px;
+      border-color: black;
          }
 
 /*Newsletter*/
@@ -237,5 +245,23 @@ background-color: gray;
 background-image:url("path/to/.newsletter-img");
 background-size: cover;
 background-position: center;
-height: 350px;
+height: 250px;
 background-color: gray;}
+
+#email {
+   display: inline-block;
+   background-color:#ffffff;
+   padding: 10px 20px;
+}
+ 
+
+button{
+   display: inline-block;
+   background-color: #ff0000; 
+   color: #ffffff; 
+   padding: 10px 20px;
+   text-decoration: none;
+}
+
+/*Shop*/
+
