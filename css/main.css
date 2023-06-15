@@ -129,8 +129,6 @@ header a:hover img {
 
 /*---hero section end--- */
 
-
-/* Example CSS styles for the layout */
 .about {
   padding: 20px;
 }
@@ -144,22 +142,18 @@ header a:hover img {
   background-size: cover;
   background-position: center;
   height: 300px;
-  /* Additional styling for the about image if needed */
 }
 
 .about-icons {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  /* Additional styling for the about icons if needed */
 }
 
 .about-icon {
   width: 60px;
   height: 60px;
-  background-color: #ccc; /* Set the desired background color for the about icons */
-  /* Additional styling for each about icon if needed */
-}
+  background-color: #ccc; }
 
 .about-content-mobile {
   display: block;
@@ -218,32 +212,50 @@ background-color: gray;
   }
   
 /*recipes*/
+.title {
+  padding-top: 24%;
+}
 
 .recipe-1{
-  background-image:url("path/to/.recipe-1.jpg");
+  background-image:url("../img/recipe1.jpg");
   background-size: cover;
   background-position: center;
-  height: 450px;
+  min-height:15vh;
+  min-width:15vh;
   background-color: #FFF07B; 
   }
+  .recipe-1:hover{
+    color:#FFBE7C;
+  }
   .recipe-2{
-     background-image:url("path/to/.recipe-2.jpg");
+     background-image:url("../img/recipe2.jpg");
      background-size: cover;
      background-position: center;
-     height: 450px;
+     min-height:15vh;
+     min-width:10vh;
+     max-height: 100vh;
+     max-width: 100vh;
      background-color: #FFF07B; 
      }
-     
+     .recipe-2:hover{
+      color:#FFBE7C
+
+    }
+
   .recipe-3{
-     background-image:url("path/to/.recipe-3.jpg");
+     background-image:url("../img/recipe3.jpg");
      background-size: cover;
      background-position: center;
-     height: 450px;
-     background-color: #FFF07B; 
-     border-width: 1px;
-     border-color: black;
+     min-height:15vh;
+     min-width:15vh;
+     background-color: #FFF07B;
         }
 
+        .recipe-3:hover{
+          color:#FFBE7C;
+        }
+
+        
 /*Newsletter*/
 
 .newsletter-img{
