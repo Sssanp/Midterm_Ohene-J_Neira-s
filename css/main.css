@@ -1,0 +1,276 @@
+.hidden{
+   display:none;
+}
+
+/*general styles*/
+header .grid-con {
+  background-color: #FFBE7C;
+}
+body {
+   padding: 0px;
+   margin: 0px;
+  
+ }
+ img, embed, object, video, picture{
+    max-width:100%;
+
+ }
+ nav {
+  display: inline-block;
+ }
+
+ p, h1, h2, h3, h4, h5{
+   padding: 0px;
+   margin: 0px;
+   
+
+ }
+ a{
+    text-decoration: none;
+    transition:all .5s ease-in-out;
+
+ }
+ input,textarea{
+    display: block;
+    margin:0px;
+    padding:0px;
+ }
+
+ .spacer {
+   margin-top: 40px;
+ }
+
+footer{
+background-color:#FFBE7C;
+}
+
+/*--- promotion ---*/
+ #promotion {
+  background-color: rgb(255, 218, 100);
+  text-align: center;
+  padding: 0px;
+}
+
+#promotion p {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+ 
+/*--- promotion end ---*/
+
+
+/*--- header ---*/
+
+
+header {
+  background-color: #f2f2f2;
+  padding: 0px;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  max-width: 200px; /* Adjust the size as needed */
+  height: auto;
+  cursor: pointer;
+}
+
+header a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+header a:hover img {
+  opacity: 0.8;
+}
+
+/*--- header end ---*/
+
+
+
+/*---hero section--- */
+.hero {
+  background-image: url("path/to/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: grey;
+  height:823px;
+  /* Additional styling for the hero section if needed */
+}
+
+.hero-content {
+  color: black; 
+  padding: 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff0000; 
+  color: #ffffff; 
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.branding-promises {
+  background-color: #f0f0f0; 
+  text-align: center;
+  padding: 0px;
+}
+
+/*---hero section end--- */
+
+
+/* Example CSS styles for the layout */
+.about {
+  padding: 20px;
+}
+
+.about-content-desktop {
+  display: none;
+}
+
+.about-image {
+  background-image: url("path/to/about-image-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  /* Additional styling for the about image if needed */
+}
+
+.about-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  /* Additional styling for the about icons if needed */
+}
+
+.about-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc; /* Set the desired background color for the about icons */
+  /* Additional styling for each about icon if needed */
+}
+
+.about-content-mobile {
+  display: block;
+}
+
+.about-image-mobile {
+  background-image: url("path/to/about-image-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+/*product images*/
+.productimage-1 {
+  background-image:url("path/to/.productimage-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  background-color: gray;
+
+}
+
+/*video*/
+
+.video {
+     background-image:url("path/to/.video.jpg");
+     background-size: cover;
+     background-position: center;
+     height: 400px;
+     background-color: gray; 
+}
+
+/*cans*/
+.can-1 {
+background-image:url("path/to/.can-1.jpg");
+background-size: cover;
+background-position: center;
+height: 350px;
+background-color: gray; 
+}
+
+.can-2 {
+  background-image:url("path/to/.can-2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  background-color: gray; 
+  }
+  
+.can-3{
+  background-image:url("path/to/.can-3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  background-color: gray; 
+  }
+  
+/*recipes*/
+
+.recipe-1{
+  background-image:url("path/to/.recipe-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  background-color: #FFF07B; 
+  }
+  .recipe-2{
+     background-image:url("path/to/.recipe-2.jpg");
+     background-size: cover;
+     background-position: center;
+     height: 450px;
+     background-color: #FFF07B; 
+     }
+     
+  .recipe-3{
+     background-image:url("path/to/.recipe-3.jpg");
+     background-size: cover;
+     background-position: center;
+     height: 450px;
+     background-color: #FFF07B; 
+     border-width: 1px;
+     border-color: black;
+        }
+
+/*Newsletter*/
+
+.newsletter-img{
+background-image:url("path/to/.newsletter-img");
+background-size: cover;
+background-position: center;
+height: 250px;
+background-color: gray;
+}
+
+#email {
+  display: inline-block;
+  background-color:#ffffff;
+  padding: 10px 20px;
+}
+
+
+button{
+  display: inline-block;
+  background-color: #ff0000; 
+  color: #ffffff; 
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/*Shop*/
+
+
