@@ -273,4 +273,10 @@ button{
 
 /*Shop*/
 
-
+.shop-hero{
+  background-image:url("path/to/.shop-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  background-color: #FFBE7C;
+  }
