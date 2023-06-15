@@ -3,6 +3,9 @@
 }
 
 /*general styles*/
+header .grid-con {
+   background-color: #FFBE7C;
+}
 body {
     padding: 0px;
     margin: 0px;
@@ -246,7 +249,8 @@ background-image:url("path/to/.newsletter-img");
 background-size: cover;
 background-position: center;
 height: 250px;
-background-color: gray;}
+background-color: gray;
+}
 
 #email {
    display: inline-block;
