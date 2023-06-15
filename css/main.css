@@ -212,40 +212,50 @@ background-color: gray;
   }
   
 /*recipes*/
+.title {
+  padding-top: 24%;
+}
 
 .recipe-1{
   background-image:url("../img/recipe1.jpg");
   background-size: cover;
   background-position: center;
-  height: 400px;
+  min-height:15vh;
+  min-width:15vh;
   background-color: #FFF07B; 
   }
   .recipe-1:hover{
-    color:#FFBE7C
+    color:#FFBE7C;
   }
   .recipe-2{
      background-image:url("../img/recipe2.jpg");
      background-size: cover;
      background-position: center;
-     height: 400px;
+     min-height:15vh;
+     min-width:10vh;
+     max-height: 100vh;
+     max-width: 100vh;
      background-color: #FFF07B; 
      }
      .recipe-2:hover{
       color:#FFBE7C
+
     }
-     
+
   .recipe-3{
      background-image:url("../img/recipe3.jpg");
      background-size: cover;
      background-position: center;
-     height: 400px;
+     min-height:15vh;
+     min-width:15vh;
      background-color: #FFF07B;
         }
 
         .recipe-3:hover{
-          color:#FFBE7C
+          color:#FFBE7C;
         }
 
+        
 /*Newsletter*/
 
 .newsletter-img{
