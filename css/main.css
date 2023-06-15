@@ -39,6 +39,7 @@ body {
   .spacer {
     margin-top: 40px;
   }
+
 footer{
 background-color:#FFBE7C;
 }
@@ -105,6 +106,7 @@ background-color:#FFBE7C;
    background-size: cover;
    background-position: center;
    background-color: grey;
+   height:823px;
    /* Additional styling for the hero section if needed */
 }
 
@@ -224,14 +226,14 @@ background-color: gray;
    background-size: cover;
    background-position: center;
    height: 450px;
-   background-color: gray; 
+   background-color: #FFF07B; 
    }
    .recipe-2{
       background-image:url("path/to/.recipe-2.jpg");
       background-size: cover;
       background-position: center;
       height: 450px;
-      background-color: gray; 
+      background-color: #FFF07B; 
       }
       
    .recipe-3{
@@ -239,7 +241,7 @@ background-color: gray;
       background-size: cover;
       background-position: center;
       height: 450px;
-      background-color: gray; 
+      background-color: #FFF07B; 
       border-width: 1px;
       border-color: black;
          }
