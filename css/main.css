@@ -39,7 +39,9 @@ body {
   .spacer {
     margin-top: 40px;
   }
-
+footer{
+background-color:#FFBE7C;
+}
 
 /*--- promotion ---*/
   #promotion {
