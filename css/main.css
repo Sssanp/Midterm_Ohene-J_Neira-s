@@ -7,9 +7,8 @@ header .grid-con {
   background-color: #FFBE7C;
 }
 body {
-   padding: 0px;
-   margin: 0px;
-  
+   font-family: 'Comfortaa', sans-serif;
+   font-weight: 400;
  }
  img, embed, object, video, picture{
     max-width:100%;
@@ -20,14 +19,10 @@ body {
  }
 
   h1, h2, h3, h4, h5{
-   padding: 0px;
-   margin: 0px;
-  
+   font-family: 'Concert One', sans-serif;
+   font-weight: 400;
  }
- p {
-  padding: 0px;
-  margin: 0px;
- }
+ 
  a{
     text-decoration: none;
     transition:all .5s ease-in-out;
