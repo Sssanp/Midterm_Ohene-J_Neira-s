@@ -4,7 +4,7 @@
 
 /*general styles*/
 header .grid-con {
-  background-color: #C4D682;
+  background-color: #9D2F56;
 }
 body {
    font-family: 'Comfortaa', sans-serif;
@@ -74,9 +74,14 @@ background-color:#FFBE7C;
 
 /*--- header ---*/
 
+.logo{
+  height: 100px;
+  width: 300px;
+  padding-bottom:50px;
 
+}
 header {
-  background-color: #f2f2f2;
+  background-color: #9D2F56;
   padding: 0px;
 }
 
@@ -90,44 +95,42 @@ header img {
 
 header a {
   display: inline-block;
-  margin-right: 10px;
-  color: #9D2F56;
+  margin-right: 0px;
+  color: white;
 }
 
 header a:hover img {
   opacity: 0.8;
 }
+header a img{
+display: block; 
+width:50px;
+height:50px;
+}
 
 header button{
-  background-color: #C4D682;
-  border:solid #C4D682;
+  background-color: #9D2F56;
+  border:solid #9D2F56;
   }
-  .hamburger img{
-    background-color:#C4D682;
-    width: 50px;
-    height: 50px;
-    border-color:#C4D682;
+  .hamburgerImg img{
+    background-color:#9D2F56;
+    width: 60px;
+    height: 60px;
+    border-color:#9D2F56;
+    padding-top:40%;
   } 
   .hamburger-menu {
     display: block;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color:#9D2F56;
     color: #fff;
-    padding: 10px;
+    padding: 5px;
 }
 
 .hamburger-icon {
     cursor: pointer;
 }
-
-/*.hamburger-icon span {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-}*/
 
 .menu-items {
     list-style: none;
@@ -144,9 +147,35 @@ header button{
 }
 
 /* Show the menu items when the hamburger icon is clicked */
-.show-menu .menu-items {
+.menu-items .show-menu {
   display: block;
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
 }
+/*.show-menu{
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}*./
 /*--- header end ---*/
 
 
@@ -199,26 +228,27 @@ p .branding-promises {
 }
 
 .about-content-desktop {
-  display: none;
+  display:block;
 }
 
 .about-image {
-  background-image: url("path/to/about-image-desktop.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 300px;
+  display: inline-block;
+ height: 200px;
+
+
 }
 
 .about-icons {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  margin-left: 500px;
+  margin-right:500px;
 }
 
 .about-icon {
   width: 60px;
-  height: 60px;
-  background-color: #ccc; }
+  height: 60px; }
 
 .about-content-mobile {
   display: block;
