@@ -4,11 +4,12 @@
 
 /*general styles*/
 header .grid-con {
-  background-color: #FFBE7C;
+  background-color: #C4D682;
 }
 body {
    font-family: 'Comfortaa', sans-serif;
    font-weight: 400;
+   
  }
  img, embed, object, video, picture{
     max-width:100%;
@@ -16,11 +17,13 @@ body {
  }
  nav {
   display: inline-block;
+  background-color: #C4D682;
  }
 
   h1, h2, h3, h4, h5{
    font-family: 'Concert One', sans-serif;
    font-weight: 400;
+   color:#9D2F56;
  }
  
  a{
@@ -44,7 +47,7 @@ background-color:#FFBE7C;
 
 /*--- promotion ---*/
  #promotion {
-  background-color: rgb(255, 218, 100);
+  background-color: #FFF995;
   text-align: center;
   padding: 0px;
 }
@@ -88,29 +91,83 @@ header img {
 header a {
   display: inline-block;
   margin-right: 10px;
+  color: #9D2F56;
 }
 
 header a:hover img {
   opacity: 0.8;
 }
 
+header button{
+  background-color: #C4D682;
+  border:solid #C4D682;
+  }
+  .hamburger img{
+    background-color:#C4D682;
+    width: 50px;
+    height: 50px;
+    border-color:#C4D682;
+  } 
+  .hamburger-menu {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+}
+
+/*.hamburger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}*/
+
+.menu-items {
+    list-style: none;
+    display: none;
+}
+
+.menu-items li {
+    padding: 10px;
+}
+
+.menu-items li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Show the menu items when the hamburger icon is clicked */
+.show-menu .menu-items {
+  display: block;
+}
 /*--- header end ---*/
 
 
 
 /*---hero section--- */
 .hero {
-  background-image: url("path/to/hero-image.jpg");
+  background-image: url("../img/header_bg-desktop.jpg");
   background-size: cover;
   background-position: center;
-  background-color: grey;
   height:823px;
-  /* Additional styling for the hero section if needed */
+}
+.col-span-4 .hero {
+  background-image: url("../img/header-img.jpg");
+  background-size: cover;
+  background-position: center;
+  height:310px;
 }
 
 .hero-content {
   color: black; 
-  padding: 20px;
+  padding-top: 40px;
 }
 
 .button {
@@ -121,10 +178,18 @@ header a:hover img {
   text-decoration: none;
 }
 
+
+
+
+
+
 .branding-promises {
-  background-color: #f0f0f0; 
+  background-color: #8DC63F; 
   text-align: center;
   padding: 0px;
+}
+p .branding-promises {
+  color:white;
 }
 
 /*---hero section end--- */
@@ -163,16 +228,13 @@ header a:hover img {
   background-image: url("path/to/about-image-mobile.jpg");
   background-size: cover;
   background-position: center;
-  height: 200px;
 }
 
 /*product images*/
 .productimage-1 {
-  background-image:url("path/to/.productimage-1.jpg");
   background-size: cover;
   background-position: center;
-  height: 300px;
-  background-color: gray;
+  background-color: #F4C02E;
 
 }
 
@@ -188,53 +250,43 @@ header a:hover img {
 
 /*cans*/
 .can-1 {
-background-image:url("path/to/.can-1.jpg");
 background-size: cover;
 background-position: center;
-height: 350px;
-background-color: gray; 
+background-color:#9D2F56;
 }
 
 .can-2 {
-  background-image:url("path/to/.can-2.jpg");
   background-size: cover;
   background-position: center;
-  height: 350px;
-  background-color: gray; 
+  background-color: #F47723 ; 
+  padding-top: 45px;
   }
   
-.can-3{
-  background-image:url("path/to/.can-3.jpg");
+.can-3 {
   background-size: cover;
   background-position: center;
-  height: 350px;
-  background-color: gray; 
+  background-color: #EB6763; 
+  padding-top:50px;
+  
   }
   
 /*recipes*/
 .title {
-  padding-top: 24%;
+  padding-top: 10px;
+  
 }
 
 .recipe-1{
-  background-image:url("../img/recipe1.jpg");
   background-size: cover;
   background-position: center;
-  min-height:15vh;
-  min-width:15vh;
   background-color: #FFF07B; 
   }
   .recipe-1:hover{
     color:#FFBE7C;
   }
   .recipe-2{
-     background-image:url("../img/recipe2.jpg");
      background-size: cover;
      background-position: center;
-     min-height:15vh;
-     min-width:10vh;
-     max-height: 100vh;
-     max-width: 100vh;
      background-color: #FFF07B; 
      }
      .recipe-2:hover{
@@ -243,12 +295,10 @@ background-color: gray;
     }
 
   .recipe-3{
-     background-image:url("../img/recipe3.jpg");
      background-size: cover;
      background-position: center;
-     min-height:15vh;
-     min-width:15vh;
      background-color: #FFF07B;
+
         }
 
         .recipe-3:hover{
@@ -285,7 +335,11 @@ button{
 .shop-hero{
 background-image:url("path/to/.shop-hero.jpg");
 background-size: cover;
-background-position: center;
+background-position: center;  
 height: 800px;
 background-color: #FFBE7C;
+}
+/*recipe page*/
+.recipe-ingredients{
+  text-align: left;
 }
