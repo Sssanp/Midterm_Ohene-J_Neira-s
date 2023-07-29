@@ -107,7 +107,46 @@ header button{
     width: 50px;
     height: 50px;
     border-color:#C4D682;
-  }  
+  } 
+  .hamburger-menu {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+}
+
+/*.hamburger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}*/
+
+.menu-items {
+    list-style: none;
+    display: none;
+}
+
+.menu-items li {
+    padding: 10px;
+}
+
+.menu-items li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Show the menu items when the hamburger icon is clicked */
+.show-menu .menu-items {
+  display: block;
+}
 /*--- header end ---*/
 
 
@@ -128,7 +167,7 @@ header button{
 
 .hero-content {
   color: black; 
-  padding: 20px;
+  padding-top: 40px;
 }
 
 .button {
@@ -220,12 +259,15 @@ background-color:#9D2F56;
   background-size: cover;
   background-position: center;
   background-color: #F47723 ; 
+  padding-top: 45px;
   }
   
 .can-3 {
   background-size: cover;
   background-position: center;
   background-color: #EB6763; 
+  padding-top:50px;
+  
   }
   
 /*recipes*/
