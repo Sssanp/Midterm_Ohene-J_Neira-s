@@ -230,6 +230,7 @@ background-color:#9D2F56;
   
 /*recipes*/
 .title {
+  padding-top: 10px;
   
 }
 
@@ -295,4 +296,8 @@ background-size: cover;
 background-position: center;  
 height: 800px;
 background-color: #FFBE7C;
+}
+/*recipe page*/
+.recipe-ingredients{
+  text-align: left;
 }
