@@ -147,8 +147,8 @@ header button{
   }
   .hamburgerImg img{
     background-color:#9D2F56;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-color:#9D2F56;
     padding-top:40%;
   } 
@@ -485,14 +485,31 @@ button{
 }
 
 /*Shop*/
-.shop-hero{
-background-image:url("path/to/.shop-hero.jpg");
+.hero-shop-mobile{
+  background-image:url("/img/hero-shop-mobile.jpg");
+  background-size:cover;
+  background-position: center;
+ height: 400px;}
+
+.hero-shop{
+background-image:url("/img/hero-shop-desktop.png");
 background-size: cover;
 background-position: center;  
 height: 800px;
 background-color: #FFBE7C;
 }
 /*recipe page*/
+
+.recipe-hero-mobile{ background-image: url("/img/hero-recipes-mobile\ 1.jpg");
+  background-size:cover;
+  background-position: center;
+  height:400px;}
+
+.recipe-hero{  background-image: url("/img/hero-recipes-desktop.jpg");
+  background-size:cover;
+  background-position: center;
+ height: 800px;}
+
 .recipe-ingredients{
   text-align: left;
 }
