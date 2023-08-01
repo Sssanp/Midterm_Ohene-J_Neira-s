@@ -1,8 +1,19 @@
+window.onload = function(){
+    window.addEventListener('scroll', function (e) {
+        if (window.scrollY> 100) {
+            document.querySelector("header").classList.add('is-scrolling');
+        } else{
+            document.querySelector("header").classList.remove('is-scrolling');  
+        }
+    });
 
-const hamburgerImg = document.querySelector('.hamburgerImg');
-hamburgerImg.addEventListener('click', menuToggled);
-function menuToggled () {
-    console.log ("menu was toggled")
+
+
+const hamburgerIMG = document.querySelector(".hamburgerIMG");
+const showMenu = document.querySelector (".show-menu");
+
+hamburgerIMG.addEventListener('click', function (){
+    hamburgerIMG.classList.toggle('show-menu');
+    showMenu.classList.toggle('show-menu');
+});
 }
-    document.querySelector('.menu-items')
-    .classList.toggle('show-menu');
