@@ -59,10 +59,24 @@ body {
  .spacer {
    margin-top: 40px;
  }
-
+/*footercontent*/
 footer{
-background-color:#FFBE7C;
+background-color:#9D2F56;
+color:white
 }
+footer a{
+  text-decoration: none;
+  background-color: #EE753A;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  border-color: #EE753A;
+  color:white;
+  border-radius: 20%;
+  font-size: 18pt;
+}
+
 
 /*--- promotion ---*/
  #promotion {
@@ -138,6 +152,10 @@ header button{
     border-color:#9D2F56;
     padding-top:40%;
   } 
+  .mobile .hamburgerImg .hamburgericon {
+    width:30px;
+    height: 30px;
+  }
   .hamburger-menu {
     display: block;
     justify-content: space-between;
@@ -477,4 +495,28 @@ background-color: #FFBE7C;
 /*recipe page*/
 .recipe-ingredients{
   text-align: left;
+}
+
+/*aboout page*/
+.about-hero  {
+  background-image: url("/img/hero-aboutus-desktop.jpg");
+  background-size:cover;
+  background-position: center;
+ height: 800px;
+ background-color: #FFBE7C;
+}
+
+.about-hero-mobile{
+  background-image: url("/img/hero-aboutus-mobile-2.jpg");
+  background-size:cover;
+  background-position: center;
+  height:400px;
+}
+
+.about-hero-text{
+padding-top: 60px;
+}
+
+.the-about-images img {
+  border-radius: 15%;
 }
