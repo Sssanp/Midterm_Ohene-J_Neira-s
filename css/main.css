@@ -4,7 +4,7 @@
 
 /*general styles*/
 header .grid-con {
-  background-color: #C4D682;
+  background-color: #9D2F56;
 }
 body {
    font-family: 'Comfortaa', sans-serif;
@@ -25,7 +25,26 @@ body {
    font-weight: 400;
    color:#9D2F56;
  }
- 
+ h1{
+  font-size: 30pt;
+ }
+ h2{
+  font-size: 28pt;
+
+ }
+ h3{ 
+  font-size: 24pt;
+ }
+ h4{
+  font-size: 20pt;
+
+ }
+ h5{
+  font-size:18pt;
+ }
+ p{
+  font-size: 16pt;
+ }
  a{
     text-decoration: none;
     transition:all .5s ease-in-out;
@@ -40,10 +59,24 @@ body {
  .spacer {
    margin-top: 40px;
  }
-
+/*footercontent*/
 footer{
-background-color:#FFBE7C;
+background-color:#9D2F56;
+color:white
 }
+footer a{
+  text-decoration: none;
+  background-color: #EE753A;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  border-color: #EE753A;
+  color:white;
+  border-radius: 20%;
+  font-size: 18pt;
+}
+
 
 /*--- promotion ---*/
  #promotion {
@@ -74,9 +107,14 @@ background-color:#FFBE7C;
 
 /*--- header ---*/
 
+.logo{
+  height: 100px;
+  width: 300px;
+  padding-bottom:50px;
 
+}
 header {
-  background-color: #f2f2f2;
+  background-color: #9D2F56;
   padding: 0px;
 }
 
@@ -90,48 +128,51 @@ header img {
 
 header a {
   display: inline-block;
-  margin-right: 10px;
-  color: #9D2F56;
+  margin-right: 0px;
+  color: white;
 }
 
 header a:hover img {
   opacity: 0.8;
 }
+header a img{
+display: block; 
+width:50px;
+height:50px;
+}
 
 header button{
-  background-color: #C4D682;
-  border:solid #C4D682;
+  background-color: #9D2F56;
+  border:solid #9D2F56;
   }
-  .hamburger img{
-    background-color:#C4D682;
+  .hamburgerImg img{
+    background-color:#9D2F56;
     width: 50px;
     height: 50px;
-    border-color:#C4D682;
+    border-color:#9D2F56;
+    padding-top:40%;
   } 
+  .mobile .hamburgerImg .hamburgericon {
+    width:30px;
+    height: 30px;
+  }
   .hamburger-menu {
     display: block;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color:#9D2F56;
     color: #fff;
-    padding: 10px;
+    padding: 5px;
 }
 
 .hamburger-icon {
     cursor: pointer;
 }
 
-/*.hamburger-icon span {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-}*/
-
 .menu-items {
     list-style: none;
     display: none;
+    left:0%;
 }
 
 .menu-items li {
@@ -144,8 +185,80 @@ header button{
 }
 
 /* Show the menu items when the hamburger icon is clicked */
-.show-menu .menu-items {
+.menu-items .show-menu {
   display: block;
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 100%;
+  right: 100%;
+  z-index: 98;
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+  padding-top: 120px;
+}
+.menu-items .show-menu li a{
+display: block;
+width: 100%;
+max-width: 200px;
+margin: 0 auto 16px;
+text-align:center;
+padding:12px 16px;
+background-color: #8DC63F;
+
+}
+/*.show-menu{
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+*/
+
+nav{
+  display:block;
+  padding: 0px;
+  background-color: #9D2F56;
+
+
+  
+
+
+}
+ul{
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+
+
+}
+nav li a{
+  font-size: 16pt;
+display: block;
+text-align: center;
+text-decoration: none;
+transition: 0.2s;
+
+
+}
+ 
+nav a:hover{
+  opacity: 0.7;
+}
+li{
+  padding-left: 20px;
+  padding-right: 20px;
+float:left
 }
 /*--- header end ---*/
 
@@ -199,26 +312,27 @@ p .branding-promises {
 }
 
 .about-content-desktop {
-  display: none;
+  display:block;
 }
 
 .about-image {
-  background-image: url("path/to/about-image-desktop.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 300px;
+  display: inline-block;
+ height: 200px;
+
+
 }
 
 .about-icons {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  margin-left: 500px;
+  margin-right:500px;
 }
 
 .about-icon {
   width: 60px;
-  height: 60px;
-  background-color: #ccc; }
+  height: 60px; }
 
 .about-content-mobile {
   display: block;
@@ -248,6 +362,14 @@ p .branding-promises {
      background-color: gray; 
 }
 
+/* review*/
+.review{
+  background-color: #EB6763;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20pt;
+}
+
 /*cans*/
 .can-1 {
 background-size: cover;
@@ -269,6 +391,37 @@ background-color:#9D2F56;
   padding-top:50px;
   
   }
+  
+  .carousel-container {
+    width: 100%;
+    max-width: 600px; /* Set the desired width for the carousel */
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    width: 300%; /* 3 images, each taking up 100% of the container */
+    animation: slide 10s infinite; /* Adjust the speed and timing as needed */
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+  }
+  
+  
+  
+  
+  
   
 /*recipes*/
 .title {
@@ -332,14 +485,55 @@ button{
 }
 
 /*Shop*/
-.shop-hero{
-background-image:url("path/to/.shop-hero.jpg");
+.hero-shop-mobile{
+  background-image:url("/img/hero-shop-mobile.jpg");
+  background-size:cover;
+  background-position: center;
+ height: 400px;}
+
+.hero-shop{
+background-image:url("/img/hero-shop-desktop.png");
 background-size: cover;
 background-position: center;  
 height: 800px;
 background-color: #FFBE7C;
 }
 /*recipe page*/
+
+.recipe-hero-mobile{ background-image: url("/img/hero-recipes-mobile\ 1.jpg");
+  background-size:cover;
+  background-position: center;
+  height:400px;}
+
+.recipe-hero{  background-image: url("/img/hero-recipes-desktop.jpg");
+  background-size:cover;
+  background-position: center;
+ height: 800px;}
+
 .recipe-ingredients{
   text-align: left;
+}
+
+/*aboout page*/
+.about-hero  {
+  background-image: url("/img/hero-aboutus-desktop.jpg");
+  background-size:cover;
+  background-position: center;
+ height: 800px;
+ background-color: #FFBE7C;
+}
+
+.about-hero-mobile{
+  background-image: url("/img/hero-aboutus-mobile-2.jpg");
+  background-size:cover;
+  background-position: center;
+  height:400px;
+}
+
+.about-hero-text{
+padding-top: 60px;
+}
+
+.the-about-images img {
+  border-radius: 15%;
 }

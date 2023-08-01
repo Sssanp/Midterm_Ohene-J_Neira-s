@@ -1,56 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&family=Concert+One&display=swap" rel="stylesheet">
-    <link href="css/grid.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <title>PRODUCTS PAGE</title>
-</head>
-    <body>
-        <section>
-        <h1 class="hidden">PRODUCTS PAGE</h1>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=device-width">
+        <title>Shop</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&family=Concert+One&display=swap" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/grid.css" rel="stylesheet">
+    </head>
+     <body>
+        <h1 class="hidden">Shop page</h1>
         <section id="promotion">
-        <div class="grid-con">
-            <h2 class="hidden">Promotion</h2>
-            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
-                <p>Promotion(ad)</p>
-            </div>
-            </div>
+            <div class="grid-con">
+                <h2 class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+                  SUMMER SALE! BUY 2 CASES OF QUATRO, GET 1 FREE! CODE: BUY2GET1
+                </h2>  
+              </div>
         </section>
 
         <header>
             <div class="grid-con">
-              <div class="mobile col-span-1 box">
-                <button class="hamburger"><img src="/img/hamburger-menu.svg" alt="Hamburger Menu"></button>
+                <div class="mobile tablet hamburger-menu">
+                    <div class="mobile col-span-1 box hamburger-icon ">
+                    <button class="hamburgerImg">
+                        <img src="/img/hamburger-menu.svg" alt="Hamburger Menu"></button>
+                    </div>
+                    <div class="tablet m-col-span-3 box hamburger-icon ">
+                        <button class="hamburgerImg"> 
+                            <img src="/img/hamburger-menu.svg" alt="Hamburger Menu"></button>
+                        </div>
+                        
+                        <div class="show-menu mobile col-span-4 box">
+                <ul class="menu-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    </div>
+                </ul>
+            </div> 
+            <nav class= "desktop l-col-span-5 box" >
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                </ul>
+                </nav>
+              <nav class="xldesktop xl-col-span-5 box">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+            </ul>
+        </nav>
+              <div class="col-start-2 col-span-2 m-col-span-3 l-col-start-6 l-col-span-3 xl-col-start-6 xl-col-span-3 box">
+                <a href="index.html"><img class="logo" src="/img/logo-original.svg" alt="Logo"></a>
               </div>
-              <div class="tablet m-col-span-3 box">
-                <button class="hamburger"><img src="/img/hamburger-menu.svg" alt="Hamburger Menu"></button>
-              </div>
-              <div class="desktop l-col-span-5 box">Menu</div>
-              <div class="xldesktop xl-col-span-5 box">Menu</div>
-              <div class="col-span-2 m-col-span-6 l-col-start-6 l-col-span-3 xl-col-start-6 xl-col-span-3 box">
-                <img src="path/to/logo.png" alt="Logo">
-              </div>
-              <div class="col-span-1 m-col-span-3 l-col-start-9 l-col-span-5 xl-col-start-9 xl-col-span-5 box">
-                <a href="#"><img src="path/to/location.png" alt="Location"></a>
-                <a href="#"><img src="path/to/login.png" alt="Login"></a>
-                <a href="#"><img src="path/to/cart.png" alt="Cart"></a>
+              <div class="col-start-3 col-span-2 m-col-start-9 m-col-span-3 l-col-start-10 l-col-span-2 xl-col-start-10 xl-col-span-2 box">
+                <a href="#"><img src="/img/user.png" alt="Login" ></a>
+                <a href="#"><img src="/img/shopping-basket.png" alt="Cart"></a>
               </div>
             </div>
-          </header>
-          <section>
-            <h2 class="hidden">Shop Now</h2>
-            <div class="grid-con">
-                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
-                    <img src="https://placeholder.co/550x868" alt="hero">
-                    </div>
-                    </div>
-                    </section>
+          </header> 
+          <section class="grid-con">
+            <div class="mobile col-span-4 box hero-shop-mobile">
+                <h2 class="about-hero-text">
+                    FLAYOURS FULL OF POSSIBILITIES</h2>
+            </div>
+            <div class="tablet m-col-span-12 box hero-shop">
+                <h2 class="about-hero-text">
+                    FLAYOURS FULL OF POSSIBILITIES</h2>
+            </div>
+          <div class="desktop l-col-span-12 box hero-shop">
+            <h2 class="about-hero-text">
+                FLAYOURS FULL OF POSSIBILITIES</h2>
+        </div>
+        <div class="xldesktop xl-col-span-12 box hero-shop">
+            <h2 class="about-hero-text">
+                FLAYOURS FULL OF POSSIBILITIES</h2>
+        </div>
+    </section>
             <section class="grid-con">
                 <h2 class="hidden">Product Section</h2>
                 <div class="mobile col-span-4 col-end-4 box">
@@ -122,19 +155,33 @@
                 </div>
 
                 </section>
-            <footer class="spacer">
-                <div class="grid-con">
-                    <div class="col-span-1 m-col-start-1 m-col-span-4 l-col-start-1 l-col-span-4 xl-col-start-1 xl-col-span-4 box"><a href="shop.html">Shop</a></div>
-                    <div class="col-span-2 m-col-start-5 m-col-span-4 l-col-start-5 l-col-span-4 xl-col-start-5 xl-col-span-4 box"><a href="#">Information</a></div>
-                    <div class="col-span-1 m-col-start-9 m-col-span-4 l-col-start-9 l-col-span-4 xl-col-start-9 xl-col-span-4 box"><a href="#">Recipes</a></div>
-                    <div class="col-span-4 box m-col-span-12 l-col-span-12 xl-col-span-12 box">
-                        <img src="path/to/twitter.png" alt="twitter">
-                        <img src="path/to/facebook.png" alt="facebook">
-                        <img src="path/to/instagram.png" alt="instagram">
-                        <img src="path/to/tiktok.png" alt="tiktok">
-                    </div>
-                 </div>
-                </footer>
+                <footer class="spacer">
+                    <div class="grid-con">
+                        <div class="col-start-2 col-span-2 m-col-start-5 m-col-span-4 l-col-start-5 l-col-span-4 xl-col-start-5 xl-col-span-4 box">
+                            <div class="logo">
+                          <img src="/img/logo-original.svg">
+                        </div>
+                        </div>
+                        <div class="col-start-2 col-span-1 m-col-start-8 m-col-span-4 l-col-start-1 l-col-span-4 xl-col-start-1 xl-col-span-4 footernav box"><a href="shop.html">SHOP</a></div>
+                        <div class="col-start-2 col-span-1 m-col-start-8 m-col-span-4 l-col-start-5 l-col-span-4 xl-col-start-5 xl-col-span-4 footernav  box"><a href="about.html">ABOUT</a></div>
+                        <div class="col-start-2 col-span-1 m-col-start-8 m-col-span-4 l-col-start-9 l-col-span-4 xl-col-start-9 xl-col-span-4 footernav box"><a href="recipes.html">RECIPES</a></div>
+                        <div class="col-start-2 col-span-3 m-col-span-7 l-col-start-2 l-col-span-10 xl-col-start-2 xl-col-span-10">
+                            <form class="form-inline" action="/action_page.php">
+                                <label for="email"></label>
+                                <input type="email" id="email" placeholder="Email Address" name="email">
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div> 
+                        <div class="col-span-4 box m-col-span-12 l-col-span-12 xl-col-span-12 box">
+                            <div class="social-media-icons"></div>
+                            <img src="/img/icons8-twitter-50.svg" alt="twitter">
+                            <img src="/img/icons8-facebook-60.svg" alt="facebook">
+                            <img src="/img/icons8-instagram-60.svg" alt="instagram">
+                            <img src="/img/icons8-tiktok-60.svg" alt="tiktok">
+                        </div>
+                        </div>
+                     </div>
+                    </footer> 
         </section>
         <script src="js/main.js"></script>
     </body>
