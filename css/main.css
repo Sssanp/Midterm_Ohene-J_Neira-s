@@ -6,11 +6,12 @@
 header .grid-con {
   background-color: #9D2F56;
 }
-body button {
+body, button, a {
    font-family: 'Comfortaa', sans-serif;
    font-weight: 400;
    
  }
+
  img, embed, object, video, picture{
     max-width:100%;
 
@@ -45,8 +46,9 @@ body button {
  p{
   font-size: 16pt;
  }
- a{
+ a {
     text-decoration: none;
+   font-family: 'Comfortaa', sans-serif;
     transition:all .5s ease-in-out;
 
  }
@@ -75,9 +77,34 @@ footer a{
   color:white;
   border-radius: 20%;
   font-size: 18pt;
+  font-family: 'Comfortaa', sans-serif;
+}
+footer p{
+  font-size:30pt;
 }
 
+footer form .form-inline{
+  align-items: center;
+  padding-top: 50px;
+}
 
+footer .form-inline input{
+font-size: 25pt;
+background-color: #9D2F56;
+border-color: transparent;
+padding-right:100px;
+}
+footer .form-inline button{
+  font-size: 25pt;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+ 
+}
+#copyright{
+  margin-left: 100px;
+  font-size: 16pt;
+}
 /*--- promotion ---*/
  #promotion {
   background-color: #FFF995;
@@ -307,41 +334,46 @@ p .branding-promises {
 
 /*---hero section end--- */
 
+#banner{
+  justify-content:space-evenly;
+}
+
 .about {
   padding: 20px;
 }
 
 .about-content-desktop {
   display:block;
+  background-color: #ef8d14;
 }
 
 .about-image {
   display: inline-block;
  height: 200px;
+ border-color: #F47723;
+ border-width: 20px;
+ border-radius: 15%;
 
 
 }
 
 .about-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   margin-top: 20px;
-  margin-left: 500px;
-  margin-right:500px;
+  color: #9D2F56;
+  
 }
 
 .about-icon {
   width: 60px;
   height: 60px; }
 
-.about-content-mobile {
-  display: block;
-}
-
-.about-image-mobile {
-  background-image: url("path/to/about-image-mobile.jpg");
-  background-size: cover;
-  background-position: center;
+.learn-more{
+  text-decoration: underline;
+  font-size: 16pt;
+  color: #9D2F56;
+  font-weight: 600;
 }
 
 /*product images*/
@@ -366,8 +398,39 @@ p .branding-promises {
 .review{
   background-color: #EB6763;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20pt;
+  font-size: 26pt;
+  border-radius: 20px;
+  padding-top:100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+
+}
+.review p{
+font-size: 30pt;
+text-align: left;
+}
+.review img{
+  width:400px;
+  display: block;
+  padding-bottom: 40px;
+}
+.review button{
+  background-color: white;
+  color:#F5C569;
+  border-color: white;
+  font-size: 30pt;
+  display: block;
+  padding-top:35px;
+  padding-bottom:35px;
+  border-radius: 45%;
+  padding-left:15px;
+  padding-right:15px;
+}
+#reviewer p{
+  color: white;
+  font-size: 16pt;
+  text-align: center;
+  
 }
 
 /*cans*/
@@ -504,6 +567,7 @@ background-color: #FFBE7C;
 }
 .products p {
   color:#9D2F56;
+  font-family: 'Comfortaa', sans-serif;
 
 }
 
