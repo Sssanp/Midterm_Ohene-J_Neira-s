@@ -22,46 +22,60 @@
 
         <header>
             <div class="grid-con">
-                <div class="mobile tablet hamburger-menu">
-                    <div class="mobile col-span-1 box hamburger-icon ">
-                    <button class="hamburgerImg">
-                        <img src="/img/hamburger-menu.svg" alt="Hamburger Menu"></button>
-                    </div>
-                    <div class="tablet m-col-span-3 box hamburger-icon ">
-                        <button class="hamburgerImg"> 
-                            <img src="/img/hamburger-menu.svg" alt="Hamburger Menu"></button>
+                <div class="mobile m-col-span-1 box">
+                    <nav>
+                        <div id="menuToggle">
+                          <input type="checkbox" />
+                     
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          
+                          <ul class="mobile col-span-4 box" id="menu-mobile">
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="shop.html">Shop</a></li>
+                           <li><a href="about.html">About Us</a></li>
+                           <li><a href="recipes.html" target="_blank">Contact</a></li>
+                          </ul>
                         </div>
-                        <div class="tablet m-col-span-3 box">
-                <nav class="nava">
-                <ul class="menu-items">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="recipes.html">Recipes</a></li>
-                </ul>
-            </nav>
-                </div>
-            </div> 
-            <nav class= "desktop l-col-span-5 box" >
+                      </nav>
+                      </div>
+                    <div class="tablet m-col-span-3 box hamburger-icon ">
+                        <nav>
+                            <div id="menuToggle">
+                              <input type="checkbox"/>
+                         
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              
+                              <ul class="tablet l-col-span-12 box" id="menu-tablet">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="recipes.html" target="_blank">Contact</a></li>
+                              </ul>
+                            </div>
+                          </nav>
+                          </div>
+            <nav class= "desktop l-col-span-4 box" >
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="shop.html">SHOP ALL</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="recipes.html">FUN RECIPES</a></li>
                 </ul>
                 </nav>
-              <nav class="xldesktop xl-col-span-5 box">
+              <nav class="xldesktop xl-col-span-4 box">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="shop.html">SHOP ALL</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="recipes.html">FUN RECIPES</a></li>
             </ul>
         </nav>
-              <div class="col-start-2 col-span-2 m-col-span-3 l-col-start-6 l-col-span-3 xl-col-start-6 xl-col-span-3 box">
+              <div class="col-start-2 col-span-2 m-col-span-3 l-col-start-5 l-col-span-3 xl-col-start-5 xl-col-span-3 box">
                 <a href="index.html"><img class="logo" src="/img/logo-original.svg" alt="Logo"></a>
               </div>
-              <div class="col-start-3 col-span-2 m-col-start-9 m-col-span-3 l-col-start-10 l-col-span-2 xl-col-start-10 xl-col-span-2 box">
+              <div class="col-start-4 col-span-2 m-col-start-9 m-col-span-3 l-col-start-10 l-col-span-2 xl-col-start-10 xl-col-span-2 box">
                 <a href="#"><img src="/img/user.png" alt="Login" ></a>
                 <a href="#"><img src="/img/shopping-basket.png" alt="Cart"></a>
               </div>
@@ -76,7 +90,6 @@
                 <h3>BEST SUMMER WITH QUATRO, WHAT 
                     ARE YOU WAITING FOR  A SIP  
                     FULL OF POSSIBILITIES….</h3>
-                <p>Discover amazing products and shop now!</p>
                 <a href="shop.html" class="button">Shop Now</a>
             </div>
         </div>
@@ -84,9 +97,12 @@
         <!---hero image ends-->
         
         <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box branding-promises">
-            <div id= "banner">
-            <p> NO SUGAR ADDED     VEGAN      GLUTEN-FREE      NON-GMO</p>
-        </div>
+            <ul id= "banner">
+            <li>NO SUGAR ADDED</li>    
+            <li>VEGAN </li> 
+            <li>GLUTEN-FREE</li>      
+            <li>NON-GMO</li>
+            </ul>
         </div>
         </div>
 </section>
@@ -116,7 +132,7 @@
                 <p>Quatro, where taste and nature unite to redefine the soft drink experience. We are passionate about crafting beverages that not only satisfy your cravings but also prioritize your well-being.</p>
 
                   <p>Our mission is to bring you a unique selection of soft drinks made from 100% natural fruit extracts. We have carefully curated a collection of exceptional flavors, each with its own distinct personality and health benefits.</p>
-                <a href="#" class="learn-more">Learn More</a>
+                <a href="about.html" class="learn-more">Learn More</a>
             </div>
             </div>
     </div>
@@ -139,46 +155,15 @@
  <p>hands down Delicious and Refreshing.</p>
  <div id= reviewer><p>~SAN - VERIFIED AMAZON CUSTUMER</p></div>
  <img src="/img/five-stars.svg" alt="five stars">
- <button> 
-    <a href="shop.html">SHOP NOW</a>
-</button>
+ <div class="shop-button"><a href="shop.html">SHOP NOW</a>
+ </div>
 </div>
  
  </div> 
 </div>
+</section>
 <section>
     <h3 class="hidden">Can selection</h3>
-    <div class="grid-con">
-        <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
-            <div id="game-boards">
-            <div class="puzzle-board">
-            
-            </div>
-            <div id="buttonHolder">
-                <img id="0" src="img/orange.svg" alt="orange">
-                <img id="1" src="/img/pinapple1.svg"alt="pineapple">
-                <img id="2" src="/img/Passionfruit.svg" alt="passionfruit">
-                <img id="3" src="/img/grape.svg" alt="grapefruit">
-            </div>
-            </div>
-        </div>
-    </div>
-       <!-- <div class="col-span-4 m-col-start-1 m-col-span-4 l-col-start-1 l-col-span-4 xl-col-start-1 xl-col-span-4 box">
-            <div class="can-1">
-                <img src="/img/passionfruit_home_final.png" alt="passionfruit flavour can">
-            </div>
-        </div>
-        <div class="col-span-2 m-col-start-5 m-col-span-4 l-col-start-5 l-col-span-4 xl-col-start-5 xl-col-span-4 box">
-            <div class="can-2">
-                <img src="/img/orange_home_final.png" alt="orange flavour can">
-            </div>  
-        </div>
-        <div class="col-span-1 m-col-start-9 m-col-span-4 l-col-start-9 l-col-span-4 xl-col-start-9 xl-col-span-4 box ">
-            <div class="can-3">
-                <img src="/img/orange_home_final.png" alt="orange flavour can">
-            </div>  
-        </div>
-    </div> -->
     
     </section>
     <section class="grid-con">
@@ -186,7 +171,7 @@
     <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
         <div class="video">
         <video controls="controls">
-        <source src="/assets/QUATRO_FINAL_VIDEO copy.mp4" type="video/mp4">
+        <source src="/assets/QUATRO_FINAL_VIDEO.mp4" type="video/mp4">
     
     </video>
     </div>
@@ -195,33 +180,36 @@
 <section>
 <div class="grid-con">
     <h3 class="hidden">Recipes</h3>
-    <div class="col-start-1 col-span-1 m-col-start-1 m-col-span-4 l-col-start-1 l-col-span-4 xl-col-start-1 xl-col-span-4 box">
+    <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+        <h3>Top it with Quatro</h3>
+        <p>Fun recipes</p>
+    </div>
+    <div class="col-span-4 m-col-start-1 m-col-span-4 l-col-start-1 l-col-span-4 xl-col-start-1 xl-col-span-4 box">
         <div class="recipe-2">
             <img src="/img/recipe1.jpg" alt="recipe 1">
             <h3 class="title">
-                <a href="#">Recipe 1</a>
+                <a href="recipes.html">Recipe 1</a>
                 </h3>
         </div>            
     </div>  
-    <div class="col-start-2 col-span-2 m-col-start-5 m-col-span-4 l-col-start-5 l-col-span-4 xl-col-start-5 xl-col-span-4 box">
+    <div class="col-span-4 m-col-start-5 m-col-span-4 l-col-start-5 l-col-span-4 xl-col-start-5 xl-col-span-4 box">
         <div class="recipe-2">
             <img src="/img/recipe2.jpg" alt="recipe 2">
             <h3 class="title">
-                <a href="#">Recipe 2</a>
+                <a href="recipes.html">Recipe 2</a>
                 </h3>
         </div> 
         </div>
-    <div class="col-start-4 col-span-1 m-col-start-9 m-col-span-4 l-col-start-9 l-col-span-4 xl-col-start-9 xl-col-span-4 box">
+    <div class="col-span-4 m-col-start-9 m-col-span-4 l-col-start-9 l-col-span-4 xl-col-start-9 xl-col-span-4 box">
         <div class="recipe-3">
             <img src="/img/recipe3.jpg" alt="recipe 3">
             <h3 class="title">
-            <a href="#">Recipe 3</a>
+            <a href="recipes.html">Recipe 3</a>
             </h3>
         </div> 
     </div>
 </div>
 </section>
-<section>
 <section class="grid-con newsletter">
     <h3 class="hidden">Newsletter</h3>
     <div class="mobile col-span-4 box">

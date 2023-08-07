@@ -129,86 +129,181 @@ header button{
   background-color: #9D2F56;
   border:solid #9D2F56;
   }
-  .hamburgerImg img{
-    background-color:#9D2F56;
-    width: 50px;
-    height: 50px;
-    border-color:#9D2F56;
-    padding-top:40%;
-  } 
-  .mobile .hamburgerImg .hamburgericon {
-    width:30px;
-    height: 30px;
-  }
-  .hamburger-menu {
-   border: 0;
-   background-color: #9D2F56;
-   margin: 20px;
-   cursor: pointer;
-   z-index: 2;
-   position: absolute;
-   top:0;
+/*hamburger*/
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-.nava{
-  position: absolute;
-  height: 100%;
-  width:300px;
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  margin-left: -300px;
-  transition: ease 700ms;
-  top:0;
-}
-
-.menu-items {
-  display: flex;
-  flex-direction: column;
-  background-color: #9D2F56;
-  justify-content: space-between;
-  height: 100%;
-  padding:150px 0px;
-
-}
-.menu-items li{
-  font-size: 50px;
-  margin: 0px, 80px;
-}
-.menu-items li a{
-  color:white;
-}
-
-.nava.close{
-  margin-left: 0px;
-}
-
-
-
-/*.show-menu{
-  position: fixed;
-  transform: translateY(-100%);
-  transition: transform 0.2s;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  background: black;
+#menuToggle a
+{
+  text-decoration: none;
   color: white;
-  list-style: none;
-  padding-top: 4rem;
+  
+  transition: color 0.3s ease;
 }
-*/
 
+#menuToggle a:hover
+{
+  opacity: 0.7;
+}
+
+
+#menuToggle input
+  {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/* makes the lines*/
+#menuToggle span
+{
+  display: block;
+  width: 40px;
+  height: 7px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: white;
+  border-radius: 1px;
+  
+  z-index: 1;
+  
+  transform-origin: 2px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the lines of hamburger
+ * into an x.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+/*to hide the middle line.*/
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * last line in other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu-tablet{
+  display: block;
+  position:absolute;
+  min-width:768px;
+ max-width:1155px;
+ height:800px;
+  margin: -100px 0 0px -50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  padding-top: 125px;
+  background: #F89B3E;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu-mobile{
+  display: block;
+  position:absolute;
+  width:475px;
+  height: 800px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   background: #F89B3E;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text */
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+
+
+
+
+#menu-tablet li a
+{
+  padding: 25px 400px;
+  font-size: 24px;
+}
+#menu-mobile li a
+{
+  padding: 15px 120px;
+  font-size: 24px;
+}
+
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul{
+  transform: none;
+}
+/*end of burger*/
 nav{
   display:block;
   padding: 0px;
   background-color: #9D2F56;
-
-
-  
-
 
 }
 ul{
@@ -256,7 +351,7 @@ float:left
 
 .hero-content {
   color: black; 
-  padding-top: 40px;
+  padding-top: 100px;
 }
 
 .button {
@@ -265,28 +360,38 @@ float:left
   color: #ffffff; 
   padding: 10px 20px;
   text-decoration: none;
-  border-radius:20%;
+  border-radius:20px;
 }
 
 
-
+/*---hero section end--- */
 
 
 
 .branding-promises {
   background-color: #8DC63F; 
-  text-align: center;
   padding: 0px;
+  justify-content: space-around;
 }
-p .branding-promises {
-  color:white;
-}
-
-/*---hero section end--- */
 
 #banner{
-  justify-content:space-evenly;
+  color: white;
+  justify-content: space-around;
+  text-align: justify;
+  display: flex;
+  
 }
+#banner  ul li {
+ display:block;
+ list-style:none;
+ padding-right: 20px;
+ padding-left: 20px;
+ color: white;
+ text-align: center;
+ justify-content: space-around;
+}
+
+  /*about*/
 
 .about {
   padding: 20px;
@@ -412,20 +517,27 @@ text-align: left;
   display: block;
   padding-bottom: 40px;
 }
-.review button{
+div .shop-button{
+width:250px;
+text-decoration: none;
+color: #EB6763;
+
+}
+.review .shop-button{
   background-color: white;
   color:#F5C569;
-  border-color: white;
+  border-color: transparent;
   font-size: 30pt;
   display: block;
-  padding-top:30px;
-  padding-bottom:30px;
-  border-radius: 40%;
+  padding-top:20px;
+  padding-bottom:20px;
+  border-radius: 50px;
   padding-left:15px;
   padding-right:15px;
   text-decoration: none;
+  cursor: pointer;
 }
-.review button a {
+.review .shop-button a{
 text-decoration: none;
 color: #EB6763;
 }
@@ -497,22 +609,26 @@ background-color:#9D2F56;
 
         
 /*Newsletter*/
-section .newsletter {
+div .newsletter .tablet {
   background-color:#F2A01F;
   
 }
-section .newsletter p h3{
+.newsletter{
+  background-color: #F2A01F;
+}
+div .newsletter p h3{
   text-align: left;
 }
 .newsletter .form-inline input {
 font-size: 20pt;
-border-radius: 30%;;
+border-radius: 30px;
 border-color: transparent;
 padding-top: 20px;
 padding-bottom:20px;
 padding-left: 10px;
 padding-right: 150px;
 display: block;
+margin-right:none;
 }
 .newsletter .form-inline #email{
   background-color:#EE753A;
@@ -522,7 +638,7 @@ display: block;
 }
 .newsletter .form-inline button {
  font-size: 20pt;
-border-radius: 30%;
+border-radius: 30px;
 border-color: transparent;
 background-color: #F4C02E;
 display:block;
@@ -548,7 +664,7 @@ footer{
     padding-bottom: 20px;
     border-color: #EE753A;
     color:white;
-    border-radius: 20%;
+    border-radius: 30px;
     font-size: 20pt;
     font-family: 'Comfortaa', sans-serif;
   }
@@ -667,8 +783,14 @@ background-color: #FFBE7C;
   background-size:cover;
   background-position: center;
  height: 800px;}
- .instructions h2 p {
-text-align: left;
+
+.mobile-text-align{
+  text-align: left;
+  display: block;
+}
+ .mobile-text-align h2 p {
+  text-align:left;
+  display: block;
  }
 
 
