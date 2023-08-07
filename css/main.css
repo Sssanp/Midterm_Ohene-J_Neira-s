@@ -261,10 +261,11 @@ float:left
 
 .button {
   display: inline-block;
-  background-color: #ff0000; 
+  background-color: #F79028; 
   color: #ffffff; 
   padding: 10px 20px;
   text-decoration: none;
+  border-radius:20%;
 }
 
 
@@ -390,9 +391,6 @@ p .branding-promises {
 }
 /*video*/
 
-.video {
-
-}
 
 /* review*/
 .review{
