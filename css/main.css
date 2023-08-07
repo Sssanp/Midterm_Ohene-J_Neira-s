@@ -818,3 +818,111 @@ padding-top: 60px;
   border-radius: 15%;
   padding-top: 20px;
 }
+
+
+/* carousel */
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  margin: auto;
+}
+
+
+.carousel-item {
+  flex-shrink: 0;
+  width: 100%;
+  scroll-snap-align: start;
+  display: flex;
+}
+
+
+.carousel-content {
+  margin-top: 50px;
+  flex: 1;
+  padding: 20px;
+  color: #ffffff;;
+  text-align: left;
+}
+
+/* Adjust text styles */
+.carousel-title {
+  font-size: 36px;
+  font-family: 'Concert One', sans-serif;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.carousel-subtitle {
+  font-size: 18px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.carousel-paragraph {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.carousel-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Concert One', sans-serif;
+  transition: background-color 0.3s;
+}
+
+/* Add specific button colors for each flavor */
+.orange-flavour .carousel-button {
+  background-color: white;
+  color: #F47723;
+}
+
+.orange-flavour{
+  background-color: #F47723;
+}
+.passionfruit-flavour .carousel-button {
+  background-color:white;
+  color: #B52F51;
+}
+
+.passionfruit-flavour{
+  background-color: #B52F51;
+}
+
+.grapefruit-flavour .carousel-button {
+  background-color:white;
+  color: #EB6763;
+}
+
+.grapefruit-flavour{
+  background-color: #EB6763;
+}
+
+.pineapple-flavour .carousel-button {
+  background-color:white;
+  color: #F4C02E;
+}
+
+.pineapple-flavour{
+  background-color: #F4C02E;
+}
+
+/* Adjust image styles */
+.carousel img {
+  flex-shrink: 0;
+  border-radius: 10px;
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+  margin-right: 20px;
+  align-items: center;
+}
+
+
+/* Apply carousel effect */
+.carousel:hover .carousel-item:not(:hover) {
+  transform: scale(0.8);
+}
