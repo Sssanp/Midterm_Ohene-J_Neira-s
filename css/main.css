@@ -44,13 +44,13 @@ body, button, a, input{
   font-size:24pt;
  }
  p{
-  font-size: 20pt;
+  font-size: 18pt;
  }
  a {
     text-decoration: none;
    font-family: 'Comfortaa', sans-serif;
     transition:all .5s ease-in-out;
-    font-size: 20pt;
+    font-size: 14pt;
 
  }
  input,textarea{
@@ -59,9 +59,7 @@ body, button, a, input{
     padding:0px;
  }
 
- .spacer {
-   margin-top: 0px;
- }
+
 
 /*--- promotion ---*/
  #promotion {
@@ -92,9 +90,9 @@ body, button, a, input{
 /*--- header ---*/
 
 .logo{
-  height: 100px;
-  width: 300px;
-  padding-bottom:50px;
+  height: 150px;
+  width: 400px;
+
 
 }
 header {
@@ -110,10 +108,11 @@ header img {
   cursor: pointer;
 }
 
-header a {
+header a  {
   display: inline-block;
   margin-right: 0px;
   color: white;
+  font-size: 16pt;
 }
 
 header a:hover img {
@@ -341,6 +340,7 @@ float:left
   background-size: cover;
   background-position: center;
   height:823px;
+  margin-top:0px;
 }
 .col-span-4 .hero {
   background-image: url("../img/header-img.jpg");
